@@ -35,5 +35,68 @@ git clone https://github.com/Guoping-Wang/neverloss.git
 cd <your-repo>
 bash install_sg_workflow.sh
 ```
+
+
+
+# Remote Tmux Workflow / 远程 Tmux 工作流
+
+> A tiny workflow to make working on remote servers feel like working locally.  
+> 一套让「远程服务器开发」尽量接近「本地开发体验」的小工具。
+
+**Languages / 语言**  
+[English](#english) | [简体中文](#简体中文)
+
+---
+
+## English
+
+### What is this?
+
+This repo contains a small workflow for managing **tmux sessions on a remote Linux server** from your laptop (macOS / Linux / Windows + Git Bash/WSL).
+
+It solves a few common pains:
+
+- You start a long training job, close the laptop → **session keeps running**.
+- You work on several projects → **one tmux session per project**, auto‑named by directory.
+- You disconnect or Wi‑Fi dies → `ssr` can **re‑attach** without thinking.
+- You want a quick “server dashboard” → `sgd` shows host, memory, disk, GPU.
+
+After setup, you mainly use these commands **on your laptop**:
+
+| Command          | Description                                                                 |
+| ---------------- | --------------------------------------------------------------------------- |
+| `sgn <project>`  | Start or attach a tmux session for a project, and remember this project.   |
+| `sgn`            | Reopen the **last project** (no argument needed).                          |
+| `ssr`            | “Session resume” – re‑attach to a recent tmux session.                     |
+| `sgs`            | Plain SSH shell (no auto‑tmux), for maintenance.                           |
+| `sgl`            | List remote tmux sessions and choose which ones to open.                   |
+| `sgk`            | Kill selected remote sessions cleanly.                                     |
+| `sgd`            | Dashboard: host / uptime / memory / disk / tmux / GPU.                     |
+| `sgw <project>`  | “Work mode”: open project session **and** a maintenance shell (macOS tabs).|
+
+---
+
+### 0. Requirements
+
+**On your laptop**
+
+- macOS Terminal / iTerm2, or
+- Linux shell, or
+- Windows with **Git Bash** or **WSL** (Ubuntu etc.)
+
+**On your remote server**
+
+- Linux user account you can SSH into.
+- `tmux` installed. (Recommended: also `htop` and `nvidia-smi`.)
+
+---
+
+### 1. SSH key setup (one‑time)
+
+On your **laptop**:
+
+```bash
+ssh-keygen -t ed25519 -C "your_email@example.com"
+
 ### 2. 或直接在线运行
 curl -fsSL https://github.com/Guoping-Wang/neverloss/main/install_sg_workflow.sh | bash
