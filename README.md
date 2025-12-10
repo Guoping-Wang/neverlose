@@ -1,7 +1,11 @@
 # neverloss
-这是一个让你可以放心盒盖, 打开就恢复 Vibe coding 的项目, 让你的 AI牛马们一刻不得闲
+- [English](#english)
+- [简体中文](#zh)
+- 
+<a id="zh"></a>
+## 简体中文**
 
-# Remote Dev Workflow (sgn / ssr / sgs / sgl / sgk / sgd / sgw)
+这是一个让你可以放心盒盖, 打开就恢复 Vibe coding 的项目, 让你的 AI牛马们一刻不得闲
 统一的一套远程开发工作流，解决这些问题：
 - 合盖 / 断网 / 断电，不想丢掉服务器上的训练 /运行任务
 - 一个人 / 团队同时维护多个项目，每个项目独立工作区
@@ -43,11 +47,8 @@ bash install_sg_workflow.sh
 > A tiny workflow to make working on remote servers feel like working locally.  
 > 一套让「远程服务器开发」尽量接近「本地开发体验」的小工具。
 
-**Languages / 语言**  
-[English](#english) | [简体中文](#简体中文)
 
----
-
+**<a id="english"></a>
 ## English
 
 ### What is this?
