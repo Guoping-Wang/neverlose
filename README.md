@@ -1,4 +1,8 @@
 # neverloss
+# Remote Tmux Workflow / 远程 Tmux 工作流
+> A tiny workflow to make working on remote servers feel like working locally.  
+> 一套让「远程服务器开发」尽量接近「本地开发体验」的小工具。
+
 - [English](#english) [简体中文](#zh)
 <a id="zh"></a>
 ## 简体中文**
@@ -37,14 +41,6 @@ git clone https://github.com/Guoping-Wang/neverloss.git
 cd <your-repo>
 bash install_sg_workflow.sh
 ```
-
-
-
-# Remote Tmux Workflow / 远程 Tmux 工作流
-
-> A tiny workflow to make working on remote servers feel like working locally.  
-> 一套让「远程服务器开发」尽量接近「本地开发体验」的小工具。
-
 
 **<a id="english"></a>
 ## English
