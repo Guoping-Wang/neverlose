@@ -173,11 +173,11 @@ alias reload='source "$RC_FILE"'
 
 # 远程命令封装
 _remote() {
-  /usr/bin/ssh -i "\$SSH_KEY" "\$REMOTE" "\$@"
+  ssh -i "\$SSH_KEY" "\$REMOTE" "\$@"
 }
 
 _remote_t() {
-  /usr/bin/ssh -t -i "\$SSH_KEY" "\$REMOTE" "\$@"
+  ssh -t -i "\$SSH_KEY" "\$REMOTE" "\$@"
 }
 
 ########################################
@@ -250,10 +250,6 @@ sgl() {
   local os_name
   os_name=\$(uname -s)
 
-  local key="\$SSH_KEY"
-  local user="\$REMOTE_USER"
-  local host="\$REMOTE_HOST"
-
   for c in \$choices; do
     local name="\${arr[\$c]}"
     [ -z "\$name" ] && continue
@@ -262,7 +258,7 @@ sgl() {
       /usr/bin/osascript <<EOS
 tell application "Terminal"
   activate
-  do script "ssh -t -i '$key' '$user@$host' '$REMOTE_TMUX attach -t $name'"
+  do script "ssh -t -i '$SSH_KEY' '$REMOTE_USER@$REMOTE_HOST' '$REMOTE_TMUX attach -t \$name'"
 end tell
 EOS
     else
@@ -404,5 +400,3 @@ echo "    ~/.tmux/layout_by_dir.sh"
 echo "示例脚本可以在 README 中看到。"
 echo "========================================"
 echo
-
-
