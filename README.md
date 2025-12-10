@@ -1,7 +1,5 @@
 # neverloss
-- [English](#english)
-- [简体中文](#zh)
-- 
+- [English](#english) [简体中文](#zh)
 <a id="zh"></a>
 ## 简体中文**
 
