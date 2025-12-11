@@ -55,7 +55,7 @@ It solves common pains for ML researchers, engineers, and anyone using remote se
 ---
 
 ### 🧠 **Problem 3: Need a unified, memorable workflow**
-🧠 **痛点 3：希望团队统一使用简单易记的命令**
+🧠 **痛点 3：简单易记的命令**
 
 ✅ **Solution**: Commands like `sgn` / `ssr` / `sgs` / `sgl` / `sgk` / `sgd` / `sgw`  
 ✅ **解决方案**：可记忆的短命令：`sgn` / `ssr` / `sgs` / `sgl` / `sgk` / `sgd` / `sgw`
@@ -181,7 +181,7 @@ PR / Issue 欢迎！欢迎提供功能建议、Bug 反馈或优化 PR。
 
 ## 📄 License
 
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+This project is licensed under the Apache License - see the [LICENSE](LICENSE) file for details.
 
 <br/>
 
